@@ -21,10 +21,7 @@ jobs:
 
       - uses: DeterminateSystems/nix-installer-action@main
 
-      - uses: nix-community/cache-nix-action@v6
-        with:
-          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.nix', 'flake.lock') }}
-          restore-prefixes-first-match: nix-${{ runner.os }}-
+      - uses: DeterminateSystems/magic-nix-cache-action@main
 
       - name: Build
         run: nix develop --command hugo --source workshop --minify
