@@ -19,7 +19,7 @@
 &lt;/div&gt;</description></item><item><title>kiro-cli を使った発展課題</title><link>https://niizawat.github.io/aws-cdk-conference-workshop-2026/20-advanced/100-prompts.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://niizawat.github.io/aws-cdk-conference-workshop-2026/20-advanced/100-prompts.html</guid><description>&lt;p&gt;kiro-cli を使って CDK コードに変更を加えてみましょう。&lt;/p&gt;
 &lt;h2 id="kiro-cli-の起動"&gt;kiro-cli の起動&lt;/h2&gt;
 &lt;p&gt;CDK プロジェクトのディレクトリで kiro-cli を起動します。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd ~/my-cdk-app
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd ~/environment/cdk-workshop
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kiro-cli chat
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="基本的な使い方"&gt;基本的な使い方&lt;/h2&gt;
 &lt;ol&gt;
