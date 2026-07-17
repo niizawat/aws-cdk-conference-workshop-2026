@@ -1,0 +1,33 @@
+# Hugo 設定ファイル
+# TODO: baseURL を実際の公開URL（GitHub Pages 等）に置き換える
+# TODO: [owner] を実際の GitHub オーナー名に置き換える
+baseURL = "https://example.github.io/cdk-conf-workshop-2026"
+languageCode = "ja"
+defaultContentLanguage = "ja"
+title = "AWS CDK ハンズオン 補助コンテンツ"
+theme = "learn"
+uglyurls = true
+googleAnalytics = ""
+sectionPagesMenu = "main"
+pygmentsCodeFences = true
+pygmentsStyle = "monokai"
+
+[params]
+themeVariant = "mine"
+showVisitedLinks = false
+author = "CDK Conf Workshop 2026"
+description = "AWS CDK ハンズオン の補助コンテンツ"
+disableSearch = true
+disableAssetsBusting = true
+disableLanguageSwitchingButton = true
+disableShortcutsTitle = true
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-external-link-alt fa-lg'></i> ワークショップ"
+identifier = "workshop"
+url = "https://catalog.workshops.aws/typescript-and-cdk-for-beginner/ja-JP"
+weight = 1
+
+[outputs]
+home = [ "HTML", "AMP", "RSS", "JSON"]
+page = [ "HTML", "AMP"]
