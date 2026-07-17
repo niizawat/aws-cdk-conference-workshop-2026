@@ -10,7 +10,7 @@ kiro-cli を使って CDK コードに変更を加えてみましょう。
 CDK プロジェクトのディレクトリで kiro-cli を起動します。
 
 ```bash
-cd ~/my-cdk-app
+cd ~/environment/cdk-workshop
 kiro-cli chat
 ```
 
