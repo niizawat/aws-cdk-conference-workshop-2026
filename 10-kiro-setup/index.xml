@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kiro-cli のセットアップ on AWS CDK ハンズオン 補助コンテンツ</title><link>https://example.github.io/cdk-conf-workshop-2026/10-kiro-setup/index.html</link><description>Recent content in kiro-cli のセットアップ on AWS CDK ハンズオン 補助コンテンツ</description><generator>Hugo</generator><language>ja</language><atom:link href="https://example.github.io/cdk-conf-workshop-2026/10-kiro-setup/index.xml" rel="self" type="application/rss+xml"/><item><title>kiro-cli のインストール</title><link>https://example.github.io/cdk-conf-workshop-2026/10-kiro-setup/100-install.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.github.io/cdk-conf-workshop-2026/10-kiro-setup/100-install.html</guid><description>&lt;h2 id="vs-code-server-のターミナルを開く"&gt;VS Code Server のターミナルを開く&lt;/h2&gt;
+&lt;p&gt;VS Code Server の画面下部にある &lt;strong&gt;TERMINAL&lt;/strong&gt; パネルを使用します。&lt;/p&gt;
+&lt;p&gt;ターミナルが表示されていない場合は、メニューから &lt;strong&gt;Terminal &amp;gt; New Terminal&lt;/strong&gt; を選択してください。&lt;/p&gt;
+&lt;h2 id="kiro-cli-のインストール"&gt;kiro-cli のインストール&lt;/h2&gt;
+&lt;p&gt;ターミナルで以下のコマンドを順に実行します。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget https://desktop-release.q.us-east-1.amazonaws.com/latest/kiro-cli.deb
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dpkg -i kiro-cli.deb
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install -f
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="notices tip" &gt;&lt;p&gt;&lt;code&gt;.deb&lt;/code&gt; パッケージでインストールされるため、依存関係も自動で解決されます。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id="インストールの確認"&gt;インストールの確認&lt;/h2&gt;
+&lt;p&gt;インストールが完了したら、以下のコマンドでバージョンを確認します。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kiro-cli --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;バージョン番号が表示されれば、インストール完了です。&lt;/p&gt;
+
+&lt;div class="notices warning" &gt;&lt;p&gt;&lt;code&gt;command not found&lt;/code&gt; と表示される場合は、ターミナルを一度閉じて再度開いてみてください。&lt;/p&gt;
+&lt;/div&gt;</description></item><item><title>kiro-cli のログイン</title><link>https://example.github.io/cdk-conf-workshop-2026/10-kiro-setup/200-login.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.github.io/cdk-conf-workshop-2026/10-kiro-setup/200-login.html</guid><description>&lt;h2 id="ログインコマンドの実行"&gt;ログインコマンドの実行&lt;/h2&gt;
+&lt;p&gt;ターミナルで以下のコマンドを実行します。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kiro-cli login --use-device-flow
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="認証の手順デバイスフロー"&gt;認証の手順（デバイスフロー）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;kiro-cli login --use-device-flow&lt;/code&gt; を実行し、認証方法を選択します&lt;/li&gt;
+&lt;li&gt;ターミナルに &lt;strong&gt;URL&lt;/strong&gt; と &lt;strong&gt;ワンタイムコード&lt;/strong&gt; が表示されます&lt;/li&gt;
+&lt;li&gt;表示された URL を手元の PC やスマートフォンのブラウザで開きます&lt;/li&gt;
+&lt;li&gt;ワンタイムコードを入力し、認証を完了します&lt;/li&gt;
+&lt;li&gt;ターミナルに自動的にログイン成功が反映されます&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="アカウントの選択"&gt;アカウントの選択&lt;/h2&gt;
+&lt;p&gt;以下のいずれかのアカウントでログインできます。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GitHub アカウント&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Google アカウント&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AWS Builder ID&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;お持ちのアカウントを選択してログインしてください。&lt;/p&gt;
+&lt;h2 id="aws-builder-id-を新規作成する場合"&gt;AWS Builder ID を新規作成する場合&lt;/h2&gt;
+&lt;p&gt;AWS Builder ID をお持ちでない方は、以下の手順で作成できます。&lt;/p&gt;
+&lt;h3 id="1-aws-builder-id-の作成ページにアクセス"&gt;1. AWS Builder ID の作成ページにアクセス&lt;/h3&gt;
+&lt;a class="link-card" href="https://profile.aws.amazon.com/" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;div class="link-card-title"&gt;AWS Builder ID の作成&lt;/div&gt;
+ &lt;div class="link-card-url"&gt;https://profile.aws.amazon.com/&lt;/div&gt;
+&lt;/a&gt;
+
+&lt;h3 id="2-メールアドレスの入力"&gt;2. メールアドレスの入力&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Your email address&lt;/strong&gt; にメールアドレスを入力&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Next&lt;/strong&gt; をクリック&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3-名前の入力"&gt;3. 名前の入力&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Your name&lt;/strong&gt; に名前を入力&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Next&lt;/strong&gt; をクリック&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="4-メール認証"&gt;4. メール認証&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;入力したメールアドレスに確認コードが届きます&lt;/li&gt;
+&lt;li&gt;確認コードを入力して &lt;strong&gt;Verify&lt;/strong&gt; をクリック&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="5-パスワードの設定"&gt;5. パスワードの設定&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;パスワードを設定して &lt;strong&gt;Create AWS Builder ID&lt;/strong&gt; をクリック&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="notices note" &gt;&lt;p&gt;AWS Builder ID は AWS アカウントとは別のものです。無料で作成でき、クレジットカードの登録は不要です。&lt;/p&gt;</description></item></channel></rss>
