@@ -1,7 +1,7 @@
 # Hugo 設定ファイル
 # TODO: baseURL を実際の公開URL（GitHub Pages 等）に置き換える
 # TODO: [owner] を実際の GitHub オーナー名に置き換える
-baseURL = "https://example.github.io/cdk-conf-workshop-2026"
+baseURL = "https://niizawat.github.io/aws-cdk-conference-workshop-2026/"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 title = "AWS CDK ハンズオン 補助コンテンツ"
